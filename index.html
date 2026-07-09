@@ -1785,7 +1785,7 @@
       <div class="view-head">
         <div>
           <h1>生産計画</h1>
-          <p>SEISAN-02 連携 · 本社工場 6ライン · 週次計画 2026-07-08〜07-14</p>
+          <p>SEISAN-02 連携 · 横浜工場 3ライン + 三鷹工場 3ライン · 週次計画 2026-07-08〜07-14</p>
         </div>
         <div class="view-actions">
           <div class="seg">
@@ -1813,13 +1813,13 @@
         </div>
         <div class="kpi">
           <div class="kpi-label"><span class="dot-tag" style="background: var(--positive)"></span>平均稼働率</div>
-          <div class="kpi-value"><span data-count="86">0</span>.<span data-count="4">0</span><span class="unit">%</span></div>
+          <div class="kpi-value"><span data-count="78">0</span>.<span data-count="8">0</span><span class="unit">%</span></div>
           <div class="kpi-delta up"><span class="change">+2.1pt</span><span>6ライン平均 / 目標 85%</span></div>
         </div>
         <div class="kpi">
           <div class="kpi-label"><span class="dot-tag" style="background: var(--warning)"></span>遅延リスク</div>
-          <div class="kpi-value"><span data-count="3">0</span><span class="unit">件</span></div>
-          <div class="kpi-delta flat"><span class="change">要監視</span><span>ライン C / 部品調達遅延</span></div>
+          <div class="kpi-value"><span data-count="4">0</span><span class="unit">件</span></div>
+          <div class="kpi-delta flat"><span class="change">要監視</span><span>ライン C・F / 部品調達遅延</span></div>
         </div>
         <div class="kpi">
           <div class="kpi-label"><span class="dot-tag" style="background: var(--accent)"></span>今月出来高</div>
@@ -1828,195 +1828,240 @@
         </div>
       </div>
 
+      <!-- ============ 6ライン別稼働率 SVG 横バー ============ -->
       <div class="card" style="margin-bottom: 22px;">
         <div class="card-head">
-          <div class="card-title">ライン別稼働率 · 本日 08:47 時点</div>
+          <div>
+            <div class="card-title">6ライン別稼働率 · 本日 08:47 時点</div>
+            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">横浜工場 3ライン + 三鷹工場 3ライン · SEISAN-02 リアルタイム反映</div>
+          </div>
           <div style="display: flex; gap: 14px;">
-            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--positive);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>正常</span>
-            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--warning);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>注意</span>
-            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>要対応</span>
+            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--positive);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>正常 (85%+)</span>
+            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--warning);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>注意 (60-85%)</span>
+            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>要対応 (60%未満)</span>
           </div>
         </div>
-        <div>
-          <div class="line-row">
-            <div><div class="line-name">ライン A · 実装</div><div class="line-code">L-A / SEISAN-02</div></div>
-            <div class="line-bar"><div class="line-bar-fill" style="width: 92%"></div></div>
-            <div class="line-pct">92%</div>
-            <div class="line-status"><span class="status-pill ok">稼働中</span></div>
-          </div>
-          <div class="line-row">
-            <div><div class="line-name">ライン B · 実装</div><div class="line-code">L-B / SEISAN-02</div></div>
-            <div class="line-bar"><div class="line-bar-fill" style="width: 88%"></div></div>
-            <div class="line-pct">88%</div>
-            <div class="line-status"><span class="status-pill ok">稼働中</span></div>
-          </div>
-          <div class="line-row">
-            <div><div class="line-name">ライン C · 検査</div><div class="line-code">L-C / SEISAN-02</div></div>
-            <div class="line-bar"><div class="line-bar-fill warn" style="width: 72%"></div></div>
-            <div class="line-pct">72%</div>
-            <div class="line-status"><span class="status-pill warn">部品待ち</span></div>
-          </div>
-          <div class="line-row">
-            <div><div class="line-name">ライン D · 組立</div><div class="line-code">L-D / SEISAN-02</div></div>
-            <div class="line-bar"><div class="line-bar-fill" style="width: 95%"></div></div>
-            <div class="line-pct">95%</div>
-            <div class="line-status"><span class="status-pill ok">稼働中</span></div>
-          </div>
-          <div class="line-row">
-            <div><div class="line-name">ライン E · 組立</div><div class="line-code">L-E / SEISAN-02</div></div>
-            <div class="line-bar"><div class="line-bar-fill" style="width: 84%"></div></div>
-            <div class="line-pct">84%</div>
-            <div class="line-status"><span class="status-pill ok">稼働中</span></div>
-          </div>
-          <div class="line-row">
-            <div><div class="line-name">ライン F · 出荷検</div><div class="line-code">L-F / SEISAN-02</div></div>
-            <div class="line-bar"><div class="line-bar-fill crit" style="width: 58%"></div></div>
-            <div class="line-pct">58%</div>
-            <div class="line-status"><span class="status-pill crit">要対応</span></div>
-          </div>
-        </div>
+        <svg viewBox="0 0 900 400" style="width:100%; height:auto; display:block; margin-top:10px;" xmlns="http://www.w3.org/2000/svg">
+          <!-- 縦目盛線 -->
+          <line x1="220" y1="22" x2="220" y2="378" stroke="var(--border)" stroke-width="1"/>
+          <line x1="380" y1="22" x2="380" y2="378" stroke="var(--grid)" stroke-width="1" stroke-dasharray="2 3"/>
+          <line x1="540" y1="22" x2="540" y2="378" stroke="var(--grid)" stroke-width="1" stroke-dasharray="2 3"/>
+          <line x1="700" y1="22" x2="700" y2="378" stroke="var(--grid)" stroke-width="1" stroke-dasharray="2 3"/>
+          <line x1="860" y1="22" x2="860" y2="378" stroke="var(--border)" stroke-width="1"/>
+          <!-- 85% 目標線 -->
+          <line x1="764" y1="22" x2="764" y2="378" stroke="var(--positive)" stroke-width="1" stroke-dasharray="4 3" opacity="0.6"/>
+          <text x="768" y="18" font-size="9" fill="var(--positive)">目標 85%</text>
+          <!-- 目盛数値 -->
+          <text x="220" y="18" font-size="9" fill="var(--ink-3)" text-anchor="middle">0%</text>
+          <text x="380" y="18" font-size="9" fill="var(--ink-3)" text-anchor="middle">25</text>
+          <text x="540" y="18" font-size="9" fill="var(--ink-3)" text-anchor="middle">50</text>
+          <text x="700" y="18" font-size="9" fill="var(--ink-3)" text-anchor="middle">75</text>
+          <text x="860" y="18" font-size="9" fill="var(--ink-3)" text-anchor="middle">100</text>
+
+          <!-- 横浜工場 グループラベル -->
+          <line x1="0" y1="35" x2="200" y2="35" stroke="var(--border-strong)" stroke-width="0.5"/>
+          <text x="6" y="47" font-size="9" fill="var(--brand)" font-weight="700" letter-spacing="0.1em">YOKOHAMA</text>
+
+          <!-- Line A: 94% 正常 -->
+          <text x="12" y="72" font-size="13" font-weight="620" fill="var(--ink)">ライン A</text>
+          <text x="12" y="86" font-size="10" fill="var(--ink-3)">横浜工場 · 組立</text>
+          <rect x="220" y="60" width="640" height="26" fill="var(--bg-2)" rx="3"/>
+          <rect x="220" y="60" width="601.6" height="26" fill="var(--positive)" rx="3"/>
+          <text x="230" y="77" font-size="10.5" fill="white" opacity="0.92">正常稼働 · 出来高 1,204 / 1,280 台</text>
+          <text x="852" y="77" font-size="13" font-weight="620" fill="var(--positive)" text-anchor="end">94%</text>
+
+          <!-- Line B: 88% 正常 -->
+          <text x="12" y="118" font-size="13" font-weight="620" fill="var(--ink)">ライン B</text>
+          <text x="12" y="132" font-size="10" fill="var(--ink-3)">横浜工場 · 検査</text>
+          <rect x="220" y="106" width="640" height="26" fill="var(--bg-2)" rx="3"/>
+          <rect x="220" y="106" width="563.2" height="26" fill="var(--positive)" rx="3"/>
+          <text x="230" y="123" font-size="10.5" fill="white" opacity="0.92">正常稼働 · 検査完了 940 / 1,062 台</text>
+          <text x="852" y="123" font-size="13" font-weight="620" fill="var(--positive)" text-anchor="end">88%</text>
+
+          <!-- Line C: 72% 一部滞留 -->
+          <text x="12" y="164" font-size="13" font-weight="620" fill="var(--ink)">ライン C</text>
+          <text x="12" y="178" font-size="10" fill="var(--ink-3)">横浜工場 · 出荷準備</text>
+          <rect x="220" y="152" width="640" height="26" fill="var(--bg-2)" rx="3"/>
+          <rect x="220" y="152" width="460.8" height="26" fill="var(--warning)" rx="3"/>
+          <text x="230" y="169" font-size="10.5" fill="white" opacity="0.92">一部滞留 · 梱包待ち 24 件</text>
+          <text x="852" y="169" font-size="13" font-weight="620" fill="var(--warning)" text-anchor="end">72%</text>
+
+          <!-- 三鷹工場 グループラベル -->
+          <line x1="0" y1="200" x2="200" y2="200" stroke="var(--border-strong)" stroke-width="0.5"/>
+          <text x="6" y="212" font-size="9" fill="var(--brand)" font-weight="700" letter-spacing="0.1em">MITAKA</text>
+
+          <!-- Line D: 96% 正常 -->
+          <text x="12" y="238" font-size="13" font-weight="620" fill="var(--ink)">ライン D</text>
+          <text x="12" y="252" font-size="10" fill="var(--ink-3)">三鷹工場 · 組立</text>
+          <rect x="220" y="226" width="640" height="26" fill="var(--bg-2)" rx="3"/>
+          <rect x="220" y="226" width="614.4" height="26" fill="var(--positive)" rx="3"/>
+          <text x="230" y="243" font-size="10.5" fill="white" opacity="0.92">正常稼働 · 出来高 2,412 / 2,510 台</text>
+          <text x="852" y="243" font-size="13" font-weight="620" fill="var(--positive)" text-anchor="end">96%</text>
+
+          <!-- Line E: 78% 通常 -->
+          <text x="12" y="284" font-size="13" font-weight="620" fill="var(--ink)">ライン E</text>
+          <text x="12" y="298" font-size="10" fill="var(--ink-3)">三鷹工場 · 検査</text>
+          <rect x="220" y="272" width="640" height="26" fill="var(--bg-2)" rx="3"/>
+          <rect x="220" y="272" width="499.2" height="26" fill="var(--warning)" rx="3"/>
+          <text x="230" y="289" font-size="10.5" fill="white" opacity="0.92">通常運転 · 検査 620 / 796 台</text>
+          <text x="852" y="289" font-size="13" font-weight="620" fill="var(--warning)" text-anchor="end">78%</text>
+
+          <!-- Line F: 45% 段取り替え中 -->
+          <text x="12" y="330" font-size="13" font-weight="620" fill="var(--ink)">ライン F</text>
+          <text x="12" y="344" font-size="10" fill="var(--ink-3)">三鷹工場 · 特殊品</text>
+          <rect x="220" y="318" width="640" height="26" fill="var(--bg-2)" rx="3"/>
+          <rect x="220" y="318" width="288" height="26" fill="var(--accent)" rx="3"/>
+          <text x="230" y="335" font-size="10.5" fill="white" opacity="0.95">段取り替え中 · 復旧 15:30 予定</text>
+          <text x="852" y="335" font-size="13" font-weight="620" fill="var(--accent)" text-anchor="end">45%</text>
+
+          <!-- フッター -->
+          <text x="220" y="374" font-size="10" fill="var(--ink-3)">SEISAN-02 · 実測値</text>
+          <text x="860" y="374" font-size="10" fill="var(--ink-3)" text-anchor="end">2026-07-09 08:47:12 更新</text>
+        </svg>
       </div>
 
-      <div class="gantt" style="margin-bottom: 22px;">
-        <div class="gantt-head">
-          <div class="lbl">製造オーダー</div>
-          <div class="gantt-days">
-            <div class="day">7/8<span class="num">火</span></div>
-            <div class="day">7/9<span class="num">水</span></div>
-            <div class="day">7/10<span class="num">木</span></div>
-            <div class="day">7/11<span class="num">金</span></div>
-            <div class="day">7/12<span class="num">土</span></div>
-            <div class="day">7/13<span class="num">日</span></div>
-            <div class="day">7/14<span class="num">月</span></div>
+      <!-- ============ 7日間ガントチャート SVG ============ -->
+      <div class="card" style="margin-bottom: 22px;">
+        <div class="card-head">
+          <div>
+            <div class="card-title">製造オーダー 7日間ガント · 2026-07-08 〜 07-14</div>
+            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">5件 進行中 · SEISAN-02 · HANBAI-03 連携</div>
+          </div>
+          <div style="display: flex; gap: 14px;">
+            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--brand);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>進行中</span>
+            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--ink-3);border-radius:2px;margin-right:4px;vertical-align:middle;opacity:0.5;"></span>予定</span>
+            <span style="font-size: 11.5px; color: var(--ink-3);"><span style="display:inline-block;width:8px;height:8px;background:var(--warning);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>要監視</span>
           </div>
         </div>
-        <div class="gantt-body">
-          <div class="gantt-row-label">
-            <div class="prd">JRC-N7842 無線基地局装置</div>
-            <div class="sub">MO-2611-042 · ライン A</div>
-          </div>
-          <div class="gantt-track">
-            <div class="gantt-bar done" style="left: 0%; width: 42%;">
-              <span>完了 · 出来高 1,200 台</span>
-              <div class="prog" style="right: 0;"></div>
-            </div>
-          </div>
+        <svg viewBox="0 0 900 320" style="width:100%; height:auto; display:block; margin-top:10px;" xmlns="http://www.w3.org/2000/svg">
+          <!-- 日付ヘッダー背景 -->
+          <rect x="200" y="0" width="700" height="36" fill="var(--surface-alt)" stroke="var(--border)"/>
+          <!-- 日付列区切り -->
+          <line x1="300" y1="0" x2="300" y2="320" stroke="var(--grid)" stroke-width="1"/>
+          <line x1="400" y1="0" x2="400" y2="320" stroke="var(--grid)" stroke-width="1"/>
+          <line x1="500" y1="0" x2="500" y2="320" stroke="var(--grid)" stroke-width="1"/>
+          <line x1="600" y1="0" x2="600" y2="320" stroke="var(--grid)" stroke-width="1"/>
+          <line x1="700" y1="0" x2="700" y2="320" stroke="var(--grid)" stroke-width="1"/>
+          <line x1="800" y1="0" x2="800" y2="320" stroke="var(--grid)" stroke-width="1"/>
+          <line x1="200" y1="0" x2="200" y2="320" stroke="var(--border)" stroke-width="1"/>
+          <line x1="900" y1="0" x2="900" y2="320" stroke="var(--border)" stroke-width="1"/>
+          <!-- 日付ラベル -->
+          <text x="250" y="16" font-size="11.5" font-weight="620" fill="var(--ink-2)" text-anchor="middle">7/8</text>
+          <text x="250" y="28" font-size="9" fill="var(--ink-3)" text-anchor="middle">火</text>
+          <text x="350" y="16" font-size="11.5" font-weight="620" fill="var(--ink-2)" text-anchor="middle">7/9</text>
+          <text x="350" y="28" font-size="9" fill="var(--ink-3)" text-anchor="middle">水</text>
+          <text x="450" y="16" font-size="11.5" font-weight="620" fill="var(--ink-2)" text-anchor="middle">7/10</text>
+          <text x="450" y="28" font-size="9" fill="var(--ink-3)" text-anchor="middle">木</text>
+          <text x="550" y="16" font-size="11.5" font-weight="620" fill="var(--ink-2)" text-anchor="middle">7/11</text>
+          <text x="550" y="28" font-size="9" fill="var(--ink-3)" text-anchor="middle">金</text>
+          <text x="650" y="16" font-size="11.5" font-weight="620" fill="var(--ink-2)" text-anchor="middle">7/12</text>
+          <text x="650" y="28" font-size="9" fill="var(--accent)" text-anchor="middle">土</text>
+          <text x="750" y="16" font-size="11.5" font-weight="620" fill="var(--ink-2)" text-anchor="middle">7/13</text>
+          <text x="750" y="28" font-size="9" fill="var(--accent)" text-anchor="middle">日</text>
+          <text x="850" y="16" font-size="11.5" font-weight="620" fill="var(--ink-2)" text-anchor="middle">7/14</text>
+          <text x="850" y="28" font-size="9" fill="var(--ink-3)" text-anchor="middle">月</text>
+          <text x="10" y="22" font-size="10.5" fill="var(--ink-3)" font-weight="620" letter-spacing="0.1em">製造オーダー</text>
 
-          <div class="gantt-row-label">
-            <div class="prd">JRC-M3210 マリンレーダー</div>
-            <div class="sub">MO-2611-043 · ライン B</div>
-          </div>
-          <div class="gantt-track">
-            <div class="gantt-bar" style="left: 14%; width: 42%;">
-              <span>進行中 · 68% / 320 台</span>
-              <div class="prog" style="right: 32%;"></div>
-            </div>
-          </div>
+          <!-- 本日ライン (7/9) -->
+          <line x1="400" y1="36" x2="400" y2="320" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 2"/>
+          <text x="404" y="48" font-size="9" fill="var(--accent)" font-weight="620">本日</text>
 
-          <div class="gantt-row-label">
-            <div class="prd">JRC-C4408 車載通信端末</div>
-            <div class="sub">MO-2611-044 · ライン D</div>
-          </div>
-          <div class="gantt-track">
-            <div class="gantt-bar" style="left: 0%; width: 72%;">
-              <span>進行中 · 54% / 2,400 台</span>
-              <div class="prog" style="right: 46%;"></div>
-            </div>
-          </div>
+          <!-- PO-2026-0847 舶用GPS装置 300台 7/8-7/10 進行中 (65%) -->
+          <text x="10" y="72" font-size="12" font-weight="620" fill="var(--ink)">PO-2026-0847</text>
+          <text x="10" y="86" font-size="10" fill="var(--ink-3)">舶用GPS装置 · 300台</text>
+          <rect x="200" y="62" width="300" height="28" fill="var(--brand)" rx="4" opacity="0.28"/>
+          <rect x="200" y="62" width="195" height="28" fill="var(--brand)" rx="4"/>
+          <text x="210" y="80" font-size="10.5" fill="white" font-weight="560">進行中 · 65% · ライン A</text>
+          <text x="490" y="80" font-size="10" fill="var(--brand)" text-anchor="end" font-weight="620">300/300</text>
 
-          <div class="gantt-row-label">
-            <div class="prd">JRC-S8801 気象衛星受信機</div>
-            <div class="sub">MO-2611-045 · ライン C</div>
-          </div>
-          <div class="gantt-track">
-            <div class="gantt-bar warn" style="left: 28%; width: 42%;">
-              <span>部品待ち · 遅延2日</span>
-              <div class="prog" style="right: 60%;"></div>
-            </div>
-          </div>
+          <!-- PO-2026-0851 業務無線機 500台 7/9-7/12 予定 -->
+          <text x="10" y="120" font-size="12" font-weight="620" fill="var(--ink)">PO-2026-0851</text>
+          <text x="10" y="134" font-size="10" fill="var(--ink-3)">業務無線機 · 500台</text>
+          <rect x="300" y="110" width="300" height="28" fill="var(--ink-3)" rx="4" opacity="0.22"/>
+          <rect x="300" y="110" width="30" height="28" fill="var(--ink-3)" rx="4" opacity="0.55"/>
+          <text x="310" y="128" font-size="10.5" fill="var(--ink-2)" font-weight="560">計画 · 開始 7/9 · ライン B</text>
+          <text x="590" y="128" font-size="10" fill="var(--ink-3)" text-anchor="end" font-weight="620">500台予定</text>
 
-          <div class="gantt-row-label">
-            <div class="prd">JRC-A1102 航空無線</div>
-            <div class="sub">MO-2611-046 · ライン E</div>
-          </div>
-          <div class="gantt-track">
-            <div class="gantt-bar" style="left: 42%; width: 58%;">
-              <span>計画 · 開始 7/11 → 480 台</span>
-              <div class="prog" style="right: 100%;"></div>
-            </div>
-          </div>
+          <!-- PO-2026-0854 気象レーダー 12台 7/10-7/16 予定 (extends beyond) -->
+          <text x="10" y="168" font-size="12" font-weight="620" fill="var(--ink)">PO-2026-0854</text>
+          <text x="10" y="182" font-size="10" fill="var(--ink-3)">気象レーダー · 12台</text>
+          <rect x="400" y="158" width="500" height="28" fill="var(--ink-3)" rx="4" opacity="0.22"/>
+          <text x="410" y="176" font-size="10.5" fill="var(--ink-2)" font-weight="560">計画 · 開始 7/10 · ライン D · 完了 7/16</text>
+          <path d="M 895 172 L 908 172 L 902 166 M 908 172 L 902 178" stroke="var(--ink-3)" stroke-width="1.5" fill="none" opacity="0.6"/>
 
-          <div class="gantt-row-label">
-            <div class="prd">JRC-P5504 携帯型無線機</div>
-            <div class="sub">MO-2611-047 · ライン F</div>
-          </div>
-          <div class="gantt-track">
-            <div class="gantt-bar crit" style="left: 14%; width: 56%;">
-              <span>遅延中 · 進捗 24%</span>
-              <div class="prog" style="right: 76%;"></div>
-            </div>
-          </div>
+          <!-- PO-2026-0858 計測器 80台 7/11-7/13 予定 -->
+          <text x="10" y="216" font-size="12" font-weight="620" fill="var(--ink)">PO-2026-0858</text>
+          <text x="10" y="230" font-size="10" fill="var(--ink-3)">計測器 · 80台</text>
+          <rect x="500" y="206" width="300" height="28" fill="var(--ink-3)" rx="4" opacity="0.22"/>
+          <text x="510" y="224" font-size="10.5" fill="var(--ink-2)" font-weight="560">計画 · 開始 7/11 · ライン E</text>
+          <text x="790" y="224" font-size="10" fill="var(--ink-3)" text-anchor="end" font-weight="620">80台予定</text>
 
-          <div class="gantt-row-label">
-            <div class="prd">JRC-R2205 海洋レーダー</div>
-            <div class="sub">MO-2611-048 · ライン A</div>
-          </div>
-          <div class="gantt-track">
-            <div class="gantt-bar" style="left: 56%; width: 44%;">
-              <span>計画 · 開始 7/12 → 180 台</span>
-              <div class="prog" style="right: 100%;"></div>
-            </div>
-          </div>
-        </div>
+          <!-- PO-2026-0862 カスタム部品 特注 7/9-7/15 進行中 要監視 -->
+          <text x="10" y="264" font-size="12" font-weight="620" fill="var(--ink)">PO-2026-0862</text>
+          <text x="10" y="278" font-size="10" fill="var(--ink-3)">カスタム部品 · 特注</text>
+          <rect x="300" y="254" width="600" height="28" fill="var(--warning)" rx="4" opacity="0.28"/>
+          <rect x="300" y="254" width="150" height="28" fill="var(--warning)" rx="4"/>
+          <text x="310" y="272" font-size="10.5" fill="white" font-weight="560">進行中 · 25% · ライン F · 要監視</text>
+          <path d="M 895 268 L 908 268 L 902 262 M 908 268 L 902 274" stroke="var(--warning)" stroke-width="1.5" fill="none"/>
+
+          <!-- フッター -->
+          <text x="10" y="310" font-size="10" fill="var(--ink-3)">→ は次週継続</text>
+          <text x="890" y="310" font-size="10" fill="var(--ink-3)" text-anchor="end">SEISAN-02 · 最終同期 08:47</text>
+        </svg>
       </div>
 
+      <!-- ============ 遅延リスク検出テーブル (4行 + 担当者) ============ -->
       <div class="card p0">
         <div style="padding: 20px 22px 14px; display: flex; justify-content: space-between; align-items: center;">
           <div>
             <div class="card-title">遅延リスク検出</div>
             <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">Catena AI が SEISAN-02 と EDI-05 の連携データから予測</div>
           </div>
-          <div class="tag accent">3件 検出</div>
+          <div class="tag accent">4件 検出</div>
         </div>
         <table class="tbl">
           <thead>
             <tr>
-              <th>製造オーダー</th>
+              <th>PO番号</th>
               <th>製品</th>
-              <th>ライン</th>
-              <th>要因</th>
+              <th>原因</th>
               <th>影響</th>
-              <th style="text-align:right;">遅延見込</th>
               <th>推奨対応</th>
+              <th>担当者</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><span class="mono">MO-2611-045</span></td>
-              <td class="name">JRC-S8801</td>
-              <td>ライン C</td>
-              <td>部品 P-8842 遅延<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">三菱電機部品(株)</div></td>
-              <td><span class="status-pill warn">中</span></td>
-              <td class="num">+2日</td>
-              <td><span style="color: var(--brand); font-weight: 560;">代替仕入先の切替</span></td>
+              <td><span class="mono">PO-2026-0862</span></td>
+              <td class="name">カスタム部品 特注<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">ライン F · 三鷹工場</div></td>
+              <td>特殊材料の入荷遅延<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">大同特殊鋼(株) · EDI-05</div></td>
+              <td><span class="status-pill crit">高 · 納期+3日</span></td>
+              <td><span style="color: var(--brand); font-weight: 560;">代替材料の技術検証を並行実施</span></td>
+              <td>田上 慎太郎<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">生産管理部</div></td>
             </tr>
             <tr>
-              <td><span class="mono">MO-2611-047</span></td>
-              <td class="name">JRC-P5504</td>
-              <td>ライン F</td>
-              <td>検査工程ボトルネック<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">出荷検 前工程</div></td>
-              <td><span class="status-pill crit">高</span></td>
-              <td class="num">+4日</td>
-              <td><span style="color: var(--brand); font-weight: 560;">土曜稼働の追加検討</span></td>
+              <td><span class="mono">PO-2026-0854</span></td>
+              <td class="name">気象レーダー 12台<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">ライン D · 三鷹工場</div></td>
+              <td>受注仕様の後追い変更<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">HANBAI-03 · 気象庁</div></td>
+              <td><span class="status-pill warn">中 · 納期+1日</span></td>
+              <td><span style="color: var(--brand); font-weight: 560;">設計部と再擦り合わせ・仕様確定</span></td>
+              <td>飯田 学<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">生産技術部</div></td>
             </tr>
             <tr>
-              <td><span class="mono">MO-2611-051</span></td>
-              <td class="name">JRC-B6612</td>
-              <td>ライン D</td>
-              <td>受注仕様変更<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">HANBAI-03 · 2件</div></td>
-              <td><span class="status-pill warn">中</span></td>
-              <td class="num">+1日</td>
-              <td><span style="color: var(--brand); font-weight: 560;">設計部と再擦り合わせ</span></td>
+              <td><span class="mono">PO-2026-0851</span></td>
+              <td class="name">業務無線機 500台<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">ライン B · 横浜工場</div></td>
+              <td>ライン C 出荷準備滞留<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">後工程ボトルネック</div></td>
+              <td><span class="status-pill warn">中 · 出荷+2日</span></td>
+              <td><span style="color: var(--brand); font-weight: 560;">土曜稼働の追加検討・応援シフト</span></td>
+              <td>橋本 千秋<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">横浜工場 課長</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">PO-2026-0858</span></td>
+              <td class="name">計測器 80台<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">ライン E · 三鷹工場</div></td>
+              <td>三菱電機部品 検査遅延<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">部品 P-8842 品質確認</div></td>
+              <td><span class="status-pill info">低 · 監視中</span></td>
+              <td><span style="color: var(--brand); font-weight: 560;">代替仕入先 (村田製作所) を待機</span></td>
+              <td>松本 直樹<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">調達購買部</div></td>
             </tr>
           </tbody>
         </table>
@@ -2066,69 +2111,225 @@
         </div>
       </div>
 
-      <div class="frame-split">
-        <aside class="filter-rail">
-          <div class="filter-block">
-            <h5>倉庫</h5>
-            <div class="filter-opt on">全倉庫<span class="cnt">18,240</span></div>
-            <div class="filter-opt">本社倉庫<span class="cnt">9,842</span></div>
-            <div class="filter-opt">厚木倉庫<span class="cnt">6,120</span></div>
-            <div class="filter-opt">シンガポールDC<span class="cnt">1,884</span></div>
-            <div class="filter-opt">上海DC<span class="cnt">394</span></div>
-          </div>
-          <div class="filter-block">
-            <h5>カテゴリ</h5>
-            <div class="filter-opt">半導体部品<span class="cnt">4,208</span></div>
-            <div class="filter-opt">電子部品<span class="cnt">6,884</span></div>
-            <div class="filter-opt">機構部品<span class="cnt">3,240</span></div>
-            <div class="filter-opt">完成品<span class="cnt">1,412</span></div>
-            <div class="filter-opt">副資材<span class="cnt">2,496</span></div>
-          </div>
-          <div class="filter-block">
-            <h5>状態</h5>
-            <div class="filter-opt">全て</div>
-            <div class="filter-opt on">安全在庫割れ<span class="cnt">14</span></div>
-            <div class="filter-opt">滞留<span class="cnt">42</span></div>
-            <div class="filter-opt">検品待ち<span class="cnt">28</span></div>
-          </div>
-        </aside>
-
-        <div class="card p0">
-          <div style="padding: 18px 22px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border);">
+      <!-- ============ カテゴリ別在庫金額 SVG ドーナツ + 内訳 ============ -->
+      <div class="grid-2" style="margin-bottom: 22px;">
+        <div class="card">
+          <div class="card-head">
             <div>
-              <div style="font-size: 14px; font-weight: 620; color: var(--ink);">安全在庫割れ · 14 SKU</div>
-              <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 2px;">Catena AI が発注推奨タイミングを算出しています</div>
+              <div class="card-title">カテゴリ別在庫金額 · ZAIKO-04</div>
+              <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">総資産 ¥4,820M · 2026-07-09 08:00 時点</div>
             </div>
-            <div class="seg">
-              <div class="seg-item on">SKU</div>
-              <div class="seg-item">ロット</div>
-              <div class="seg-item">履歴</div>
+            <div class="tag brand">5 カテゴリ</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 260px 1fr; gap: 24px; align-items: center; padding: 8px 4px;">
+            <svg viewBox="0 0 240 240" style="width:100%; height:auto; display:block;" xmlns="http://www.w3.org/2000/svg">
+              <!-- 総額 4,820M -->
+              <!-- 原材料 32% (¥1,542M) - brand -->
+              <!-- 仕掛品 24% (¥1,157M) - positive -->
+              <!-- 完成品 21% (¥1,012M) - accent -->
+              <!-- 部品 15% (¥723M) - warning -->
+              <!-- 消耗品 8% (¥386M) - info -->
+              <!-- 円周 = 2*PI*80 = 502.65 -->
+              <!-- 各セグメント: stroke-dasharray -->
+              <circle cx="120" cy="120" r="80" fill="none" stroke="var(--surface-2)" stroke-width="32"/>
+              <!-- 原材料 32%: 160.85 offset 0 -->
+              <circle cx="120" cy="120" r="80" fill="none" stroke="var(--brand)" stroke-width="32"
+                stroke-dasharray="160.85 502.65" stroke-dashoffset="0"
+                transform="rotate(-90 120 120)"/>
+              <!-- 仕掛品 24%: 120.64 offset -160.85 -->
+              <circle cx="120" cy="120" r="80" fill="none" stroke="var(--positive)" stroke-width="32"
+                stroke-dasharray="120.64 502.65" stroke-dashoffset="-160.85"
+                transform="rotate(-90 120 120)"/>
+              <!-- 完成品 21%: 105.56 offset -281.49 -->
+              <circle cx="120" cy="120" r="80" fill="none" stroke="var(--accent)" stroke-width="32"
+                stroke-dasharray="105.56 502.65" stroke-dashoffset="-281.49"
+                transform="rotate(-90 120 120)"/>
+              <!-- 部品 15%: 75.40 offset -387.05 -->
+              <circle cx="120" cy="120" r="80" fill="none" stroke="var(--warning)" stroke-width="32"
+                stroke-dasharray="75.40 502.65" stroke-dashoffset="-387.05"
+                transform="rotate(-90 120 120)"/>
+              <!-- 消耗品 8%: 40.21 offset -462.45 -->
+              <circle cx="120" cy="120" r="80" fill="none" stroke="var(--info)" stroke-width="32"
+                stroke-dasharray="40.21 502.65" stroke-dashoffset="-462.45"
+                transform="rotate(-90 120 120)"/>
+              <!-- 中央テキスト -->
+              <text x="120" y="112" font-size="11" fill="var(--ink-3)" text-anchor="middle" letter-spacing="0.1em">TOTAL</text>
+              <text x="120" y="136" font-size="26" font-weight="640" fill="var(--ink)" text-anchor="middle">¥4,820</text>
+              <text x="120" y="152" font-size="10" fill="var(--ink-3)" text-anchor="middle">million JPY</text>
+            </svg>
+            <div class="sub-list" style="gap: 14px;">
+              <div class="row"><div class="lbl"><span style="display:inline-block;width:10px;height:10px;background:var(--brand);border-radius:2px;margin-right:8px;vertical-align:middle;"></span>原材料</div><div class="val">¥1,542M</div><div><span class="tag brand">32%</span></div></div>
+              <div class="row"><div class="lbl"><span style="display:inline-block;width:10px;height:10px;background:var(--positive);border-radius:2px;margin-right:8px;vertical-align:middle;"></span>仕掛品</div><div class="val">¥1,157M</div><div><span class="tag pos">24%</span></div></div>
+              <div class="row"><div class="lbl"><span style="display:inline-block;width:10px;height:10px;background:var(--accent);border-radius:2px;margin-right:8px;vertical-align:middle;"></span>完成品</div><div class="val">¥1,012M</div><div><span class="tag accent">21%</span></div></div>
+              <div class="row"><div class="lbl"><span style="display:inline-block;width:10px;height:10px;background:var(--warning);border-radius:2px;margin-right:8px;vertical-align:middle;"></span>部品</div><div class="val">¥723M</div><div><span class="tag warn">15%</span></div></div>
+              <div class="row"><div class="lbl"><span style="display:inline-block;width:10px;height:10px;background:var(--info);border-radius:2px;margin-right:8px;vertical-align:middle;"></span>消耗品</div><div class="val">¥386M</div><div><span class="tag info">8%</span></div></div>
             </div>
           </div>
-          <table class="tbl">
-            <thead>
-              <tr>
-                <th>SKU</th>
-                <th>品目</th>
-                <th>倉庫</th>
-                <th class="num">現在庫</th>
-                <th class="num">安全在庫</th>
-                <th class="num">推奨発注</th>
-                <th>状態</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td class="mono">P-8842-A</td><td class="name">RF 高周波モジュール</td><td>本社倉庫</td><td class="num">12</td><td class="num">50</td><td class="num" style="color: var(--accent); font-weight: 620;">200</td><td><span class="status-pill crit">緊急</span></td></tr>
-              <tr><td class="mono">C-4021-B</td><td class="name">コネクタ 32ピン</td><td>本社倉庫</td><td class="num">184</td><td class="num">400</td><td class="num" style="color: var(--warning); font-weight: 620;">600</td><td><span class="status-pill warn">要発注</span></td></tr>
-              <tr><td class="mono">S-1284-C</td><td class="name">半導体 STM32</td><td>厚木倉庫</td><td class="num">42</td><td class="num">120</td><td class="num" style="color: var(--warning); font-weight: 620;">300</td><td><span class="status-pill warn">要発注</span></td></tr>
-              <tr><td class="mono">A-9902-D</td><td class="name">アンテナ 帯域 400M</td><td>本社倉庫</td><td class="num">6</td><td class="num">30</td><td class="num" style="color: var(--accent); font-weight: 620;">100</td><td><span class="status-pill crit">緊急</span></td></tr>
-              <tr><td class="mono">T-6641-E</td><td class="name">トランジスタ 大電力</td><td>本社倉庫</td><td class="num">88</td><td class="num">200</td><td class="num" style="color: var(--warning); font-weight: 620;">400</td><td><span class="status-pill warn">要発注</span></td></tr>
-              <tr><td class="mono">L-3392-F</td><td class="name">LCD 6.5インチ</td><td>厚木倉庫</td><td class="num">14</td><td class="num">40</td><td class="num" style="color: var(--warning); font-weight: 620;">120</td><td><span class="status-pill warn">要発注</span></td></tr>
-              <tr><td class="mono">B-1102-G</td><td class="name">バッテリー Li-Ion</td><td>本社倉庫</td><td class="num">220</td><td class="num">500</td><td class="num" style="color: var(--warning); font-weight: 620;">800</td><td><span class="status-pill warn">要発注</span></td></tr>
-              <tr><td class="mono">M-4408-H</td><td class="name">マイコン ARM Cortex</td><td>本社倉庫</td><td class="num">36</td><td class="num">100</td><td class="num" style="color: var(--warning); font-weight: 620;">200</td><td><span class="status-pill warn">要発注</span></td></tr>
-            </tbody>
-          </table>
         </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div>
+              <div class="card-title">倉庫別 在庫金額推移</div>
+              <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">直近 6ヶ月 · 本社/厚木/海外DC</div>
+            </div>
+            <span class="tag brand">+3.2%</span>
+          </div>
+          <svg viewBox="0 0 400 240" style="width:100%; height:auto; display:block; margin-top:8px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- 横グリッド -->
+            <line x1="40" y1="40" x2="380" y2="40" stroke="var(--grid)" stroke-width="1" stroke-dasharray="2 3"/>
+            <line x1="40" y1="90" x2="380" y2="90" stroke="var(--grid)" stroke-width="1" stroke-dasharray="2 3"/>
+            <line x1="40" y1="140" x2="380" y2="140" stroke="var(--grid)" stroke-width="1" stroke-dasharray="2 3"/>
+            <line x1="40" y1="190" x2="380" y2="190" stroke="var(--border)" stroke-width="1"/>
+            <!-- 縦軸ラベル -->
+            <text x="34" y="44" font-size="9" fill="var(--ink-3)" text-anchor="end">5B</text>
+            <text x="34" y="94" font-size="9" fill="var(--ink-3)" text-anchor="end">3B</text>
+            <text x="34" y="144" font-size="9" fill="var(--ink-3)" text-anchor="end">1B</text>
+            <!-- 月ラベル -->
+            <text x="70" y="208" font-size="10" fill="var(--ink-3)" text-anchor="middle">2月</text>
+            <text x="120" y="208" font-size="10" fill="var(--ink-3)" text-anchor="middle">3月</text>
+            <text x="170" y="208" font-size="10" fill="var(--ink-3)" text-anchor="middle">4月</text>
+            <text x="220" y="208" font-size="10" fill="var(--ink-3)" text-anchor="middle">5月</text>
+            <text x="270" y="208" font-size="10" fill="var(--ink-3)" text-anchor="middle">6月</text>
+            <text x="320" y="208" font-size="10" fill="var(--ink)" font-weight="620" text-anchor="middle">7月</text>
+            <!-- 積み上げ棒: 本社/厚木/海外 -->
+            <!-- 各月の合計は約4,400M → 4,820M で増加傾向 -->
+            <!-- 2月: 本社2600/厚木1500/海外300 = 4400M → 底190, 各高さ % of (4400/5000 * 150) = 132 total -->
+            <!-- height per M: 150 / 5000 = 0.03 -->
+            <!-- 2月 -->
+            <rect x="55" y="130" width="30" height="60" fill="var(--brand)" opacity="0.85"/>
+            <rect x="55" y="85" width="30" height="45" fill="var(--positive)" opacity="0.85"/>
+            <rect x="55" y="76" width="30" height="9" fill="var(--info)" opacity="0.85"/>
+            <!-- 3月 -->
+            <rect x="105" y="126" width="30" height="64" fill="var(--brand)" opacity="0.85"/>
+            <rect x="105" y="80" width="30" height="46" fill="var(--positive)" opacity="0.85"/>
+            <rect x="105" y="70" width="30" height="10" fill="var(--info)" opacity="0.85"/>
+            <!-- 4月 -->
+            <rect x="155" y="122" width="30" height="68" fill="var(--brand)" opacity="0.85"/>
+            <rect x="155" y="76" width="30" height="46" fill="var(--positive)" opacity="0.85"/>
+            <rect x="155" y="65" width="30" height="11" fill="var(--info)" opacity="0.85"/>
+            <!-- 5月 -->
+            <rect x="205" y="118" width="30" height="72" fill="var(--brand)" opacity="0.85"/>
+            <rect x="205" y="72" width="30" height="46" fill="var(--positive)" opacity="0.85"/>
+            <rect x="205" y="60" width="30" height="12" fill="var(--info)" opacity="0.85"/>
+            <!-- 6月 -->
+            <rect x="255" y="114" width="30" height="76" fill="var(--brand)" opacity="0.85"/>
+            <rect x="255" y="66" width="30" height="48" fill="var(--positive)" opacity="0.85"/>
+            <rect x="255" y="54" width="30" height="12" fill="var(--info)" opacity="0.85"/>
+            <!-- 7月 (最新・強調) -->
+            <rect x="305" y="107" width="30" height="83" fill="var(--brand)"/>
+            <rect x="305" y="58" width="30" height="49" fill="var(--positive)"/>
+            <rect x="305" y="45" width="30" height="13" fill="var(--info)"/>
+            <!-- 7月ラベル -->
+            <text x="320" y="38" font-size="10" font-weight="620" fill="var(--ink)" text-anchor="middle">¥4.82B</text>
+
+            <!-- 凡例 -->
+            <rect x="40" y="222" width="10" height="10" fill="var(--brand)"/>
+            <text x="55" y="231" font-size="10" fill="var(--ink-3)">本社倉庫</text>
+            <rect x="120" y="222" width="10" height="10" fill="var(--positive)"/>
+            <text x="135" y="231" font-size="10" fill="var(--ink-3)">厚木倉庫</text>
+            <rect x="200" y="222" width="10" height="10" fill="var(--info)"/>
+            <text x="215" y="231" font-size="10" fill="var(--ink-3)">シンガポール/上海DC</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- ============ 在庫アラート カード 3枚 ============ -->
+      <div class="split-3" style="margin-bottom: 22px;">
+        <div class="card" style="border-left: 3px solid var(--warning);">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+            <div style="width: 32px; height: 32px; border-radius: 8px; background: color-mix(in oklab, var(--warning) 14%, transparent); display: flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--warning)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+            </div>
+            <span class="status-pill warn">警告 · 在庫過剰</span>
+          </div>
+          <div style="font-size: 14px; font-weight: 620; color: var(--ink); margin-bottom: 4px;">部品 A-1042</div>
+          <div style="font-size: 11.5px; color: var(--ink-3); margin-bottom: 12px;">通信モジュール基板 · 本社倉庫</div>
+          <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px;">
+            <div style="font-size: 22px; font-weight: 640; color: var(--warning); font-variant-numeric: tabular-nums;">¥42M</div>
+            <div style="font-size: 11px; color: var(--ink-3);">滞留 148日</div>
+          </div>
+          <div style="font-size: 12px; color: var(--ink-2); line-height: 1.55; padding: 10px 12px; background: var(--surface-2); border-radius: 6px;">
+            <span style="color: var(--warning); font-weight: 620;">推奨:</span> 発注ロット見直し推奨。次回発注を200個→80個に減量、消化を優先。
+          </div>
+        </div>
+
+        <div class="card" style="border-left: 3px solid var(--accent);">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+            <div style="width: 32px; height: 32px; border-radius: 8px; background: color-mix(in oklab, var(--accent) 14%, transparent); display: flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <span class="status-pill crit">危険 · 欠品リスク</span>
+          </div>
+          <div style="font-size: 14px; font-weight: 620; color: var(--ink); margin-bottom: 4px;">材料 M-0284</div>
+          <div style="font-size: 11.5px; color: var(--ink-3); margin-bottom: 12px;">RF高周波 基板材料 · 三鷹工場</div>
+          <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px;">
+            <div style="font-size: 22px; font-weight: 640; color: var(--accent); font-variant-numeric: tabular-nums;">残 2日分</div>
+            <div style="font-size: 11px; color: var(--ink-3);">安全在庫割れ</div>
+          </div>
+          <div style="font-size: 12px; color: var(--ink-2); line-height: 1.55; padding: 10px 12px; background: var(--surface-2); border-radius: 6px;">
+            <span style="color: var(--accent); font-weight: 620;">推奨:</span> 3日以内に発注必要。EDI-05 経由で 三菱電機部品(株) に緊急手配。
+          </div>
+        </div>
+
+        <div class="card" style="border-left: 3px solid var(--info);">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+            <div style="width: 32px; height: 32px; border-radius: 8px; background: color-mix(in oklab, var(--info) 14%, transparent); display: flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--info)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <span class="status-pill info">注意 · 長期滞留</span>
+          </div>
+          <div style="font-size: 14px; font-weight: 620; color: var(--ink); margin-bottom: 4px;">完成品 P-9931</div>
+          <div style="font-size: 11.5px; color: var(--ink-3); margin-bottom: 12px;">旧型 業務無線機 · 厚木倉庫</div>
+          <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px;">
+            <div style="font-size: 22px; font-weight: 640; color: var(--info); font-variant-numeric: tabular-nums;">¥18M</div>
+            <div style="font-size: 11px; color: var(--ink-3);">240日 未出荷</div>
+          </div>
+          <div style="font-size: 12px; color: var(--ink-2); line-height: 1.55; padding: 10px 12px; background: var(--surface-2); border-radius: 6px;">
+            <span style="color: var(--info); font-weight: 620;">推奨:</span> 販促連携推奨。HANBAI-03 経由でキャンペーン価格 (¥65k/台) 提案。
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ リアルタイム在庫テーブル 10行 ============ -->
+      <div class="card p0">
+        <div style="padding: 20px 22px 14px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div class="card-title">リアルタイム在庫 · 主要 SKU 10件</div>
+            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">ZAIKO-04 · 在庫引当自動反映 · 08:47 更新</div>
+          </div>
+          <div class="tags-row">
+            <span class="tag pos">正常 6</span>
+            <span class="tag warn">要発注 3</span>
+            <span class="tag accent">欠品リスク 1</span>
+          </div>
+        </div>
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>品番</th>
+              <th>品名</th>
+              <th>倉庫</th>
+              <th class="num">現在庫</th>
+              <th class="num">引当済</th>
+              <th class="num">実在庫</th>
+              <th>次入荷</th>
+              <th>状態</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="mono">M-0284</td><td class="name">RF高周波 基板材料</td><td>三鷹工場</td><td class="num">42</td><td class="num" style="color: var(--accent);">38</td><td class="num" style="color: var(--accent); font-weight: 620;">4</td><td class="mono">07/12 予定</td><td><span class="status-pill crit">欠品リスク</span></td></tr>
+            <tr><td class="mono">P-8842</td><td class="name">RF モジュール ハイパワー</td><td>本社倉庫</td><td class="num">128</td><td class="num">80</td><td class="num" style="color: var(--warning); font-weight: 620;">48</td><td class="mono">07/14 予定</td><td><span class="status-pill warn">要発注</span></td></tr>
+            <tr><td class="mono">S-1284</td><td class="name">半導体 STM32F407</td><td>厚木倉庫</td><td class="num">240</td><td class="num">180</td><td class="num" style="color: var(--warning); font-weight: 620;">60</td><td class="mono">07/16 予定</td><td><span class="status-pill warn">要発注</span></td></tr>
+            <tr><td class="mono">C-4021</td><td class="name">32ピン コネクタ 産業用</td><td>本社倉庫</td><td class="num">1,840</td><td class="num">640</td><td class="num" style="color: var(--positive); font-weight: 620;">1,200</td><td class="mono">07/22 予定</td><td><span class="status-pill ok">正常</span></td></tr>
+            <tr><td class="mono">A-9902</td><td class="name">アンテナ 400MHz帯</td><td>本社倉庫</td><td class="num">96</td><td class="num">62</td><td class="num" style="color: var(--warning); font-weight: 620;">34</td><td class="mono">07/17 予定</td><td><span class="status-pill warn">要発注</span></td></tr>
+            <tr><td class="mono">T-6641</td><td class="name">大電力トランジスタ</td><td>本社倉庫</td><td class="num">420</td><td class="num">120</td><td class="num" style="color: var(--positive); font-weight: 620;">300</td><td class="mono">07/24 予定</td><td><span class="status-pill ok">正常</span></td></tr>
+            <tr><td class="mono">L-3392</td><td class="name">LCD パネル 6.5インチ</td><td>厚木倉庫</td><td class="num">184</td><td class="num">72</td><td class="num" style="color: var(--positive); font-weight: 620;">112</td><td class="mono">07/28 予定</td><td><span class="status-pill ok">正常</span></td></tr>
+            <tr><td class="mono">B-1102</td><td class="name">バッテリー Li-Ion 3200mAh</td><td>本社倉庫</td><td class="num">680</td><td class="num">240</td><td class="num" style="color: var(--positive); font-weight: 620;">440</td><td class="mono">07/30 予定</td><td><span class="status-pill ok">正常</span></td></tr>
+            <tr><td class="mono">A-1042</td><td class="name">通信モジュール基板</td><td>本社倉庫</td><td class="num">840</td><td class="num">12</td><td class="num" style="color: var(--warning);">828</td><td class="mono">発注停止中</td><td><span class="status-pill warn">在庫過剰</span></td></tr>
+            <tr><td class="mono">P-9931</td><td class="name">旧型 業務無線機 (完成品)</td><td>厚木倉庫</td><td class="num">280</td><td class="num">0</td><td class="num" style="color: var(--info);">280</td><td class="mono">生産終了</td><td><span class="status-pill info">長期滞留</span></td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -2156,92 +2357,216 @@
 
       <div class="kpi-grid">
         <div class="kpi">
-          <div class="kpi-label"><span class="dot-tag" style="background: var(--brand)"></span>今月受注</div>
+          <div class="kpi-label"><span class="dot-tag" style="background: var(--brand)"></span>今月受注件数</div>
+          <div class="kpi-value"><span data-count="247">0</span><span class="unit">件</span></div>
+          <div class="kpi-delta up"><span class="change">+18</span><span>前月比 / 新規 32件</span></div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label"><span class="dot-tag" style="background: var(--positive)"></span>受注金額</div>
           <div class="kpi-value">¥<span data-count="348">0</span><span class="unit">M</span></div>
           <div class="kpi-delta up"><span class="change">+12.4%</span><span>前月比</span></div>
         </div>
         <div class="kpi">
-          <div class="kpi-label"><span class="dot-tag" style="background: var(--positive)"></span>出荷完了率</div>
-          <div class="kpi-value"><span data-count="98">0</span>.<span data-count="4">0</span><span class="unit">%</span></div>
-          <div class="kpi-delta up"><span class="change">+1.2pt</span><span>納期遵守 312/318</span></div>
+          <div class="kpi-label"><span class="dot-tag" style="background: var(--warning)"></span>出荷完了率</div>
+          <div class="kpi-value"><span data-count="94">0</span><span class="unit">%</span></div>
+          <div class="kpi-delta up"><span class="change">+1.2pt</span><span>納期遵守 312/331</span></div>
         </div>
         <div class="kpi">
-          <div class="kpi-label"><span class="dot-tag" style="background: var(--warning)"></span>出荷進行中</div>
-          <div class="kpi-value"><span data-count="36">0</span><span class="unit">件</span></div>
-          <div class="kpi-delta flat"><span class="change">追跡中</span><span>本日出荷予定 12件</span></div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label"><span class="dot-tag" style="background: var(--accent)"></span>未回収債権</div>
-          <div class="kpi-value">¥<span data-count="42">0</span><span class="unit">M</span></div>
-          <div class="kpi-delta down"><span class="change">90日超 2件</span><span>要フォロー</span></div>
+          <div class="kpi-label"><span class="dot-tag" style="background: var(--accent)"></span>平均リードタイム</div>
+          <div class="kpi-value"><span data-count="3">0</span>.<span data-count="2">0</span><span class="unit">日</span></div>
+          <div class="kpi-delta down"><span class="change">-0.4日</span><span>目標 3.5日以内</span></div>
         </div>
       </div>
 
-      <div class="card p0" style="margin-bottom: 22px;">
-        <div style="padding: 20px 22px 14px; display: flex; justify-content: space-between; align-items: center;">
+      <!-- ============ 受注パイプライン SVG 横バーチャート ============ -->
+      <div class="card" style="margin-bottom: 22px;">
+        <div class="card-head">
           <div>
-            <div class="card-title">出荷指示 · 本日 (2026-07-09)</div>
-            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">田上 慎太郎 · 生産管理部 が担当</div>
+            <div class="card-title">受注パイプライン · 2026年7月</div>
+            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">HANBAI-03 連携 · 見積〜出荷完了までのステージ別件数と金額</div>
           </div>
           <div class="tags-row">
-            <span class="tag pos">出荷完了 4</span>
-            <span class="tag brand">出荷準備 5</span>
-            <span class="tag warn">部品待ち 3</span>
+            <span class="tag brand">総 386件</span>
+            <span class="tag pos">¥512M</span>
+          </div>
+        </div>
+        <svg viewBox="0 0 900 260" style="width:100%; height:auto; display:block; margin-top:12px;" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pipe-a" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="var(--info)" stop-opacity="0.7"/>
+              <stop offset="1" stop-color="var(--info)"/>
+            </linearGradient>
+            <linearGradient id="pipe-b" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="var(--brand-2)" stop-opacity="0.8"/>
+              <stop offset="1" stop-color="var(--brand)"/>
+            </linearGradient>
+            <linearGradient id="pipe-c" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="var(--warning)" stop-opacity="0.8"/>
+              <stop offset="1" stop-color="var(--warning)"/>
+            </linearGradient>
+            <linearGradient id="pipe-d" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="var(--positive-2)" stop-opacity="0.8"/>
+              <stop offset="1" stop-color="var(--positive)"/>
+            </linearGradient>
+            <linearGradient id="pipe-e" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="var(--accent-2)" stop-opacity="0.8"/>
+              <stop offset="1" stop-color="var(--accent)"/>
+            </linearGradient>
+          </defs>
+
+          <!-- ステージ 1: 見積 (139件 ¥164M) 幅=最大 -->
+          <text x="10" y="30" font-size="12" font-weight="620" fill="var(--ink)">1. 見積</text>
+          <text x="10" y="46" font-size="10" fill="var(--ink-3)">Quotation</text>
+          <rect x="130" y="18" width="720" height="34" fill="url(#pipe-a)" rx="4"/>
+          <text x="146" y="40" font-size="12.5" fill="white" font-weight="620">139 件</text>
+          <text x="840" y="40" font-size="12" fill="white" font-weight="620" text-anchor="end">¥164M</text>
+          <text x="856" y="40" font-size="9" fill="var(--ink-3)">100%</text>
+
+          <!-- ステージ 2: 受注 (94件 ¥238M) -->
+          <text x="10" y="82" font-size="12" font-weight="620" fill="var(--ink)">2. 受注</text>
+          <text x="10" y="98" font-size="10" fill="var(--ink-3)">Sales Order</text>
+          <rect x="130" y="70" width="587" height="34" fill="url(#pipe-b)" rx="4"/>
+          <text x="146" y="92" font-size="12.5" fill="white" font-weight="620">94 件</text>
+          <text x="707" y="92" font-size="12" fill="white" font-weight="620" text-anchor="end">¥238M</text>
+          <text x="724" y="92" font-size="9" fill="var(--ink-3)">68%</text>
+
+          <!-- ステージ 3: 生産中 (68件 ¥184M) -->
+          <text x="10" y="134" font-size="12" font-weight="620" fill="var(--ink)">3. 生産中</text>
+          <text x="10" y="150" font-size="10" fill="var(--ink-3)">In Production</text>
+          <rect x="130" y="122" width="453" height="34" fill="url(#pipe-c)" rx="4"/>
+          <text x="146" y="144" font-size="12.5" fill="white" font-weight="620">68 件</text>
+          <text x="573" y="144" font-size="12" fill="white" font-weight="620" text-anchor="end">¥184M</text>
+          <text x="590" y="144" font-size="9" fill="var(--ink-3)">49%</text>
+
+          <!-- ステージ 4: 出荷準備 (49件 ¥142M) -->
+          <text x="10" y="186" font-size="12" font-weight="620" fill="var(--ink)">4. 出荷準備</text>
+          <text x="10" y="202" font-size="10" fill="var(--ink-3)">Ready to Ship</text>
+          <rect x="130" y="174" width="356" height="34" fill="url(#pipe-d)" rx="4"/>
+          <text x="146" y="196" font-size="12.5" fill="white" font-weight="620">49 件</text>
+          <text x="476" y="196" font-size="12" fill="white" font-weight="620" text-anchor="end">¥142M</text>
+          <text x="493" y="196" font-size="9" fill="var(--ink-3)">35%</text>
+
+          <!-- ステージ 5: 出荷完了 (36件 ¥98M) -->
+          <text x="10" y="238" font-size="12" font-weight="620" fill="var(--ink)">5. 出荷完了</text>
+          <text x="10" y="254" font-size="10" fill="var(--ink-3)">Shipped</text>
+          <rect x="130" y="226" width="240" height="34" fill="url(#pipe-e)" rx="4"/>
+          <text x="146" y="248" font-size="12.5" fill="white" font-weight="620">36 件</text>
+          <text x="360" y="248" font-size="12" fill="white" font-weight="620" text-anchor="end">¥98M</text>
+          <text x="377" y="248" font-size="9" fill="var(--ink-3)">26%</text>
+
+          <!-- 転換率マーカー -->
+          <text x="875" y="15" font-size="9" fill="var(--ink-3)">転換率</text>
+        </svg>
+      </div>
+
+      <!-- ============ 受注一覧テーブル 10行 (進捗プログレスバー) ============ -->
+      <div class="card p0">
+        <div style="padding: 20px 22px 14px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div class="card-title">受注一覧 · 進行中 10件</div>
+            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">HANBAI-03 · SEISAN-02 連携 · 田上 慎太郎 (生産管理部) が担当</div>
+          </div>
+          <div class="tags-row">
+            <span class="tag pos">出荷完了 3</span>
+            <span class="tag brand">生産中 4</span>
+            <span class="tag warn">部品待ち 2</span>
+            <span class="tag info">受付 1</span>
           </div>
         </div>
         <table class="tbl">
           <thead>
             <tr>
-              <th>受注番号</th>
+              <th>SO番号</th>
               <th>顧客</th>
-              <th>製品</th>
-              <th class="num">数量</th>
+              <th>品目</th>
               <th class="num">金額</th>
-              <th>出荷倉庫</th>
               <th>納期</th>
-              <th>状態</th>
+              <th style="min-width:200px;">進捗</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td class="mono">SO-4128-A</td><td class="name">日本国際貨物</td><td>JRC-M3210</td><td class="num">3</td><td class="num">¥8,400,000</td><td>厚木倉庫</td><td class="mono">07/10</td><td><span class="status-pill ok">出荷完了</span></td></tr>
-            <tr><td class="mono">SO-4128-B</td><td class="name">JAL エンジニアリング</td><td>JRC-A1102</td><td class="num">12</td><td class="num">¥14,400,000</td><td>本社倉庫</td><td class="mono">07/10</td><td><span class="status-pill ok">出荷完了</span></td></tr>
-            <tr><td class="mono">SO-4129-A</td><td class="name">海上保安庁 第三管区</td><td>JRC-R2205</td><td class="num">2</td><td class="num">¥28,600,000</td><td>本社倉庫</td><td class="mono">07/11</td><td><span class="status-pill info">出荷準備</span></td></tr>
-            <tr><td class="mono">SO-4129-B</td><td class="name">気象庁 気象衛星センター</td><td>JRC-S8801</td><td class="num">4</td><td class="num">¥18,400,000</td><td>本社倉庫</td><td class="mono">07/12</td><td><span class="status-pill warn">部品待ち</span></td></tr>
-            <tr><td class="mono">SO-4130-A</td><td class="name">住友重機械マリン</td><td>JRC-M3210</td><td class="num">6</td><td class="num">¥16,800,000</td><td>厚木倉庫</td><td class="mono">07/11</td><td><span class="status-pill info">出荷準備</span></td></tr>
-            <tr><td class="mono">SO-4130-B</td><td class="name">NTTドコモ</td><td>JRC-C4408</td><td class="num">240</td><td class="num">¥24,000,000</td><td>本社倉庫</td><td class="mono">07/13</td><td><span class="status-pill info">出荷準備</span></td></tr>
-            <tr><td class="mono">SO-4131-A</td><td class="name">全日空商事</td><td>JRC-A1102</td><td class="num">8</td><td class="num">¥9,600,000</td><td>本社倉庫</td><td class="mono">07/14</td><td><span class="status-pill info">出荷準備</span></td></tr>
-            <tr><td class="mono">SO-4131-B</td><td class="name">Yamaha Marine</td><td>JRC-N7842</td><td class="num">18</td><td class="num">¥18,900,000</td><td>厚木倉庫</td><td class="mono">07/14</td><td><span class="status-pill warn">部品待ち</span></td></tr>
+            <tr>
+              <td><span class="mono">SO-2026-1284</span></td>
+              <td class="name">日本国際貨物<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">Nissan Kokusai</div></td>
+              <td>舶用GPS装置 · 300台</td>
+              <td class="num">¥42,600,000</td>
+              <td class="mono">07/10</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill pos" style="width: 100%;"></div></div><div style="font-size: 10.5px; color: var(--positive); margin-top: 4px; font-weight: 620;">出荷完了 · 100%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1285</span></td>
+              <td class="name">海上保安庁<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">第三管区</div></td>
+              <td>マリンレーダー JRC-R2205 · 2台</td>
+              <td class="num">¥28,600,000</td>
+              <td class="mono">07/11</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill pos" style="width: 100%;"></div></div><div style="font-size: 10.5px; color: var(--positive); margin-top: 4px; font-weight: 620;">出荷完了 · 100%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1288</span></td>
+              <td class="name">気象庁<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">気象衛星センター</div></td>
+              <td>気象レーダー · 12台</td>
+              <td class="num">¥84,000,000</td>
+              <td class="mono">07/16</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill" style="width: 55%;"></div></div><div style="font-size: 10.5px; color: var(--brand); margin-top: 4px; font-weight: 620;">生産中 · 55%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1290</span></td>
+              <td class="name">NTTドコモ<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">法人営業本部</div></td>
+              <td>業務無線機 · 500台</td>
+              <td class="num">¥42,000,000</td>
+              <td class="mono">07/12</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill" style="width: 72%;"></div></div><div style="font-size: 10.5px; color: var(--brand); margin-top: 4px; font-weight: 620;">生産中 · 72%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1291</span></td>
+              <td class="name">JAL エンジニアリング<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">羽田整備工場</div></td>
+              <td>航空無線 · 12台</td>
+              <td class="num">¥14,400,000</td>
+              <td class="mono">07/10</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill pos" style="width: 100%;"></div></div><div style="font-size: 10.5px; color: var(--positive); margin-top: 4px; font-weight: 620;">出荷完了 · 100%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1293</span></td>
+              <td class="name">住友重機械マリン<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">横浜造船所</div></td>
+              <td>船舶通信システム · 一式</td>
+              <td class="num">¥62,400,000</td>
+              <td class="mono">07/18</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill" style="width: 44%;"></div></div><div style="font-size: 10.5px; color: var(--brand); margin-top: 4px; font-weight: 620;">生産中 · 44%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1295</span></td>
+              <td class="name">全日空商事<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">機材調達部</div></td>
+              <td>計測器 · 80台</td>
+              <td class="num">¥18,400,000</td>
+              <td class="mono">07/13</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill" style="width: 38%;"></div></div><div style="font-size: 10.5px; color: var(--brand); margin-top: 4px; font-weight: 620;">生産中 · 38%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1296</span></td>
+              <td class="name">Yamaha Marine<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">舶用機器事業部</div></td>
+              <td>舶用電子機器 · 18台</td>
+              <td class="num">¥18,900,000</td>
+              <td class="mono">07/14</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill warn" style="width: 62%;"></div></div><div style="font-size: 10.5px; color: var(--warning); margin-top: 4px; font-weight: 620;">部品待ち · 62%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1298</span></td>
+              <td class="name">大同特殊鋼<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">研究開発本部</div></td>
+              <td>カスタム部品 · 特注</td>
+              <td class="num">¥8,600,000</td>
+              <td class="mono">07/15</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill warn" style="width: 25%;"></div></div><div style="font-size: 10.5px; color: var(--warning); margin-top: 4px; font-weight: 620;">部品待ち · 25%</div></td>
+            </tr>
+            <tr>
+              <td><span class="mono">SO-2026-1301</span></td>
+              <td class="name">三菱重工 神戸造船所<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">艦艇部門</div></td>
+              <td>艦載通信システム · 一式</td>
+              <td class="num">¥28,200,000</td>
+              <td class="mono">07/24</td>
+              <td><div class="prog-bar" style="width: 180px;"><div class="prog-fill" style="width: 12%; background: var(--info);"></div></div><div style="font-size: 10.5px; color: var(--info); margin-top: 4px; font-weight: 620;">受付 · 12%</div></td>
+            </tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-head">
-            <div class="card-title">主要顧客 · 今月受注ランキング</div>
-            <a class="card-more" href="#">全顧客 →</a>
-          </div>
-          <div class="sub-list">
-            <div class="row"><div class="lbl">日本国際貨物</div><div class="val">¥64.2M</div><div><span class="tag pos">+18%</span></div></div>
-            <div class="row"><div class="lbl">海上保安庁</div><div class="val">¥48.6M</div><div><span class="tag brand">+6%</span></div></div>
-            <div class="row"><div class="lbl">気象庁</div><div class="val">¥42.0M</div><div><span class="tag brand">±0%</span></div></div>
-            <div class="row"><div class="lbl">NTTドコモ</div><div class="val">¥38.4M</div><div><span class="tag pos">+22%</span></div></div>
-            <div class="row"><div class="lbl">JALエンジニアリング</div><div class="val">¥28.8M</div><div><span class="tag accent">-4%</span></div></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-head">
-            <div class="card-title">回収サイクル · 得意先別</div>
-            <span class="tag brand">平均 41.2日</span>
-          </div>
-          <div class="sub-list">
-            <div class="row"><div class="lbl">海上保安庁</div><div class="val">30日</div><div><span class="tag pos">優良</span></div></div>
-            <div class="row"><div class="lbl">気象庁</div><div class="val">45日</div><div><span class="tag brand">標準</span></div></div>
-            <div class="row"><div class="lbl">日本国際貨物</div><div class="val">28日</div><div><span class="tag pos">優良</span></div></div>
-            <div class="row"><div class="lbl">JALエンジニアリング</div><div class="val">62日</div><div><span class="tag warn">長期</span></div></div>
-            <div class="row"><div class="lbl">Yamaha Marine</div><div class="val">92日</div><div><span class="tag accent">要督促</span></div></div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -2269,76 +2594,282 @@
 
       <div class="kpi-grid">
         <div class="kpi">
-          <div class="kpi-label"><span class="dot-tag" style="background: var(--brand)"></span>今月発注額</div>
-          <div class="kpi-value">¥<span data-count="184">0</span><span class="unit">M</span></div>
-          <div class="kpi-delta up"><span class="change">+6.2%</span><span>前月比</span></div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label"><span class="dot-tag" style="background: var(--positive)"></span>承認済</div>
+          <div class="kpi-label"><span class="dot-tag" style="background: var(--brand)"></span>発注中件数</div>
           <div class="kpi-value"><span data-count="127">0</span><span class="unit">件</span></div>
-          <div class="kpi-delta up"><span class="change">平均 1.4日</span><span>承認リードタイム短縮</span></div>
+          <div class="kpi-delta up"><span class="change">+8</span><span>今月新規 · 総額 ¥184M</span></div>
         </div>
         <div class="kpi">
           <div class="kpi-label"><span class="dot-tag" style="background: var(--warning)"></span>承認待ち</div>
-          <div class="kpi-value"><span data-count="14">0</span><span class="unit">件</span></div>
-          <div class="kpi-delta flat"><span class="change">滞留 3件</span><span>3日超</span></div>
+          <div class="kpi-value"><span data-count="5">0</span><span class="unit">件</span></div>
+          <div class="kpi-delta flat"><span class="change">滞留 2件</span><span>3日超 · 要対応</span></div>
         </div>
         <div class="kpi">
-          <div class="kpi-label"><span class="dot-tag" style="background: var(--accent)"></span>納期遅延リスク</div>
-          <div class="kpi-value"><span data-count="4">0</span><span class="unit">件</span></div>
-          <div class="kpi-delta down"><span class="change">要フォロー</span><span>三菱電機部品 他 3社</span></div>
+          <div class="kpi-label"><span class="dot-tag" style="background: var(--accent)"></span>未検収金額</div>
+          <div class="kpi-value">¥<span data-count="184">0</span><span class="unit">M</span></div>
+          <div class="kpi-delta down"><span class="change">-6.2%</span><span>前月比 / 検収予定 42件</span></div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label"><span class="dot-tag" style="background: var(--positive)"></span>主要仕入先</div>
+          <div class="kpi-value"><span data-count="28">0</span><span class="unit">社</span></div>
+          <div class="kpi-delta up"><span class="change">戦略提携</span><span>全 208社中 / 発注 92%</span></div>
         </div>
       </div>
 
-      <div class="split-3">
-        <div class="mini-tile">
-          <div class="lbl">主要仕入先</div>
-          <div class="val">208 <span style="font-size: 13px; color: var(--ink-3); font-weight: 500;">社</span></div>
-          <div class="sub">うち戦略仕入先 42社</div>
+      <!-- ============ 5段階承認フロー可視化 SVG ============ -->
+      <div class="card" style="margin-bottom: 22px;">
+        <div class="card-head">
+          <div>
+            <div class="card-title">承認フロー可視化 · 5段階承認プロセス</div>
+            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">申請 → 部長 → 本部長 → 経理 → 発注確定 · 本日 08:47 時点の滞留を強調</div>
+          </div>
+          <div class="tags-row">
+            <span class="tag brand">進行中 42</span>
+            <span class="tag accent">滞留 5</span>
+          </div>
         </div>
-        <div class="mini-tile">
-          <div class="lbl">見積依頼中</div>
-          <div class="val">18 <span style="font-size: 13px; color: var(--ink-3); font-weight: 500;">件</span></div>
-          <div class="sub">回答待ち 12件 · 完了 6件</div>
+        <svg viewBox="0 0 900 220" style="width:100%; height:auto; display:block; margin-top:8px;" xmlns="http://www.w3.org/2000/svg">
+          <!-- 接続矢印 (5段階を結ぶ) -->
+          <line x1="150" y1="90" x2="230" y2="90" stroke="var(--border-strong)" stroke-width="1.5"/>
+          <path d="M 226 86 L 232 90 L 226 94" fill="var(--border-strong)"/>
+          <line x1="330" y1="90" x2="410" y2="90" stroke="var(--border-strong)" stroke-width="1.5"/>
+          <path d="M 406 86 L 412 90 L 406 94" fill="var(--border-strong)"/>
+          <line x1="510" y1="90" x2="590" y2="90" stroke="var(--accent)" stroke-width="2.5"/>
+          <path d="M 586 85 L 594 90 L 586 95" fill="var(--accent)"/>
+          <line x1="690" y1="90" x2="770" y2="90" stroke="var(--border-strong)" stroke-width="1.5"/>
+          <path d="M 766 86 L 772 90 L 766 94" fill="var(--border-strong)"/>
+
+          <!-- Stage 1: 申請 (正常) -->
+          <circle cx="90" cy="90" r="42" fill="var(--surface)" stroke="var(--positive)" stroke-width="2"/>
+          <circle cx="90" cy="90" r="34" fill="color-mix(in oklab, var(--positive) 10%, transparent)"/>
+          <text x="90" y="86" font-size="10" fill="var(--ink-3)" text-anchor="middle" letter-spacing="0.1em">STEP 1</text>
+          <text x="90" y="100" font-size="14" font-weight="640" fill="var(--positive)" text-anchor="middle">申請</text>
+          <text x="90" y="150" font-size="11" fill="var(--ink-2)" text-anchor="middle" font-weight="620">42 件</text>
+          <text x="90" y="164" font-size="10" fill="var(--ink-3)" text-anchor="middle">Application</text>
+          <text x="90" y="180" font-size="9.5" fill="var(--positive)" text-anchor="middle">平均 0.4h</text>
+
+          <!-- Stage 2: 部長承認 (正常) -->
+          <circle cx="270" cy="90" r="42" fill="var(--surface)" stroke="var(--positive)" stroke-width="2"/>
+          <circle cx="270" cy="90" r="34" fill="color-mix(in oklab, var(--positive) 10%, transparent)"/>
+          <text x="270" y="86" font-size="10" fill="var(--ink-3)" text-anchor="middle" letter-spacing="0.1em">STEP 2</text>
+          <text x="270" y="100" font-size="13" font-weight="640" fill="var(--positive)" text-anchor="middle">部長承認</text>
+          <text x="270" y="150" font-size="11" fill="var(--ink-2)" text-anchor="middle" font-weight="620">18 件</text>
+          <text x="270" y="164" font-size="10" fill="var(--ink-3)" text-anchor="middle">Dept. Manager</text>
+          <text x="270" y="180" font-size="9.5" fill="var(--positive)" text-anchor="middle">平均 6.2h</text>
+
+          <!-- Stage 3: 本部長承認 (正常 · やや遅延) -->
+          <circle cx="450" cy="90" r="42" fill="var(--surface)" stroke="var(--warning)" stroke-width="2"/>
+          <circle cx="450" cy="90" r="34" fill="color-mix(in oklab, var(--warning) 10%, transparent)"/>
+          <text x="450" y="86" font-size="10" fill="var(--ink-3)" text-anchor="middle" letter-spacing="0.1em">STEP 3</text>
+          <text x="450" y="100" font-size="13" font-weight="640" fill="var(--warning)" text-anchor="middle">本部長承認</text>
+          <text x="450" y="150" font-size="11" fill="var(--ink-2)" text-anchor="middle" font-weight="620">12 件</text>
+          <text x="450" y="164" font-size="10" fill="var(--ink-3)" text-anchor="middle">Division Head</text>
+          <text x="450" y="180" font-size="9.5" fill="var(--warning)" text-anchor="middle">平均 18.6h</text>
+
+          <!-- Stage 4: 経理承認 (滞留 · 強調) -->
+          <circle cx="630" cy="90" r="46" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+          <circle cx="630" cy="90" r="36" fill="color-mix(in oklab, var(--accent) 14%, transparent)"/>
+          <text x="630" y="86" font-size="10" fill="var(--accent)" text-anchor="middle" font-weight="620" letter-spacing="0.1em">STEP 4 ⚠</text>
+          <text x="630" y="100" font-size="13" font-weight="640" fill="var(--accent)" text-anchor="middle">経理承認</text>
+          <text x="630" y="152" font-size="12" fill="var(--accent)" text-anchor="middle" font-weight="620">7 件 · 滞留 5</text>
+          <text x="630" y="166" font-size="10" fill="var(--ink-3)" text-anchor="middle">Accounting · KAIKEI-01</text>
+          <text x="630" y="182" font-size="9.5" fill="var(--accent)" text-anchor="middle" font-weight="620">平均 82.4h (基準超過)</text>
+
+          <!-- Stage 5: 発注確定 (正常) -->
+          <circle cx="810" cy="90" r="42" fill="var(--surface)" stroke="var(--brand)" stroke-width="2"/>
+          <circle cx="810" cy="90" r="34" fill="color-mix(in oklab, var(--brand) 10%, transparent)"/>
+          <text x="810" y="86" font-size="10" fill="var(--ink-3)" text-anchor="middle" letter-spacing="0.1em">STEP 5</text>
+          <text x="810" y="100" font-size="13" font-weight="640" fill="var(--brand)" text-anchor="middle">発注確定</text>
+          <text x="810" y="150" font-size="11" fill="var(--ink-2)" text-anchor="middle" font-weight="620">今月 92 件</text>
+          <text x="810" y="164" font-size="10" fill="var(--ink-3)" text-anchor="middle">Confirmed · EDI-05</text>
+          <text x="810" y="180" font-size="9.5" fill="var(--brand)" text-anchor="middle">¥184M 発注済</text>
+
+          <!-- Alert 帯 (下部) -->
+          <rect x="0" y="200" width="900" height="20" fill="color-mix(in oklab, var(--accent) 8%, transparent)"/>
+          <text x="12" y="214" font-size="10.5" fill="var(--accent)" font-weight="620">⚠ 経理承認で 5件 が滞留中 (最長 4日) · KAIKEI-01 チームへエスカレーション済</text>
+        </svg>
+      </div>
+
+      <!-- ============ 仕入先ランキング カード 5枚 ============ -->
+      <div style="margin-bottom: 22px;">
+        <div style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 12px; padding: 0 4px;">
+          <div>
+            <div style="font-size: 14px; font-weight: 620; color: var(--ink);">仕入先ランキング · 今月発注金額順</div>
+            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 3px;">主要 5社 · 全 28社中 · EDI-05 集計</div>
+          </div>
+          <a class="card-more" href="#">全 208 社 →</a>
         </div>
-        <div class="mini-tile">
-          <div class="lbl">検収完了率 (月次)</div>
-          <div class="val">96.4<span style="font-size: 13px; color: var(--ink-3); font-weight: 500;">%</span></div>
-          <div class="sub">差異発生 4件 (要協議)</div>
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;">
+          <div class="card" style="padding: 14px 16px; border-top: 3px solid var(--brand);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 22px; font-weight: 640; color: var(--brand); letter-spacing: -0.02em; font-variant-numeric: tabular-nums;">01</span>
+              <span class="status-pill ok">戦略</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 620; color: var(--ink); line-height: 1.3; margin-bottom: 3px;">三菱電機部品(株)</div>
+            <div style="font-size: 10.5px; color: var(--ink-3); margin-bottom: 12px;">半導体・RF モジュール</div>
+            <div style="font-size: 18px; font-weight: 640; color: var(--ink); font-variant-numeric: tabular-nums;">¥42.8M</div>
+            <div style="font-size: 10.5px; color: var(--positive); margin-top: 3px; font-weight: 620;">+12.4% 前月比</div>
+          </div>
+
+          <div class="card" style="padding: 14px 16px; border-top: 3px solid var(--brand-2);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 22px; font-weight: 640; color: var(--brand-2); letter-spacing: -0.02em; font-variant-numeric: tabular-nums;">02</span>
+              <span class="status-pill ok">戦略</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 620; color: var(--ink); line-height: 1.3; margin-bottom: 3px;">村田製作所</div>
+            <div style="font-size: 10.5px; color: var(--ink-3); margin-bottom: 12px;">セラミック・コンデンサ</div>
+            <div style="font-size: 18px; font-weight: 640; color: var(--ink); font-variant-numeric: tabular-nums;">¥28.4M</div>
+            <div style="font-size: 10.5px; color: var(--positive); margin-top: 3px; font-weight: 620;">+8.2% 前月比</div>
+          </div>
+
+          <div class="card" style="padding: 14px 16px; border-top: 3px solid var(--positive);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 22px; font-weight: 640; color: var(--positive); letter-spacing: -0.02em; font-variant-numeric: tabular-nums;">03</span>
+              <span class="status-pill ok">戦略</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 620; color: var(--ink); line-height: 1.3; margin-bottom: 3px;">京セラ</div>
+            <div style="font-size: 10.5px; color: var(--ink-3); margin-bottom: 12px;">セラミック基板・部品</div>
+            <div style="font-size: 18px; font-weight: 640; color: var(--ink); font-variant-numeric: tabular-nums;">¥22.6M</div>
+            <div style="font-size: 10.5px; color: var(--ink-3); margin-top: 3px; font-weight: 560;">±0% 前月比</div>
+          </div>
+
+          <div class="card" style="padding: 14px 16px; border-top: 3px solid var(--warning);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 22px; font-weight: 640; color: var(--warning); letter-spacing: -0.02em; font-variant-numeric: tabular-nums;">04</span>
+              <span class="status-pill warn">要監視</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 620; color: var(--ink); line-height: 1.3; margin-bottom: 3px;">大同特殊鋼(株)</div>
+            <div style="font-size: 10.5px; color: var(--ink-3); margin-bottom: 12px;">特殊金属材料</div>
+            <div style="font-size: 18px; font-weight: 640; color: var(--ink); font-variant-numeric: tabular-nums;">¥18.2M</div>
+            <div style="font-size: 10.5px; color: var(--warning); margin-top: 3px; font-weight: 620;">納期遅延 2件</div>
+          </div>
+
+          <div class="card" style="padding: 14px 16px; border-top: 3px solid var(--info);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 22px; font-weight: 640; color: var(--info); letter-spacing: -0.02em; font-variant-numeric: tabular-nums;">05</span>
+              <span class="status-pill info">継続</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 620; color: var(--ink); line-height: 1.3; margin-bottom: 3px;">TDK</div>
+            <div style="font-size: 10.5px; color: var(--ink-3); margin-bottom: 12px;">フェライトコア・磁性部品</div>
+            <div style="font-size: 18px; font-weight: 640; color: var(--ink); font-variant-numeric: tabular-nums;">¥14.8M</div>
+            <div style="font-size: 10.5px; color: var(--positive); margin-top: 3px; font-weight: 620;">+3.6% 前月比</div>
+          </div>
         </div>
       </div>
 
+      <!-- ============ 発注一覧テーブル 8行 ============ -->
       <div class="card p0">
         <div style="padding: 20px 22px 14px; display: flex; justify-content: space-between; align-items: center;">
           <div>
-            <div class="card-title">発注承認フロー · 進行中</div>
-            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">3段階承認 · 部長 → 本部長 → 経理</div>
+            <div class="card-title">発注一覧 · 進行中 8件</div>
+            <div style="font-size: 11.5px; color: var(--ink-3); margin-top: 4px;">EDI-05 連携 · 承認フロー統合 · 田上 慎太郎 (調達購買部) が起票</div>
           </div>
           <div class="tags-row">
-            <span class="tag brand">進行中 14</span>
-            <span class="tag warn">滞留 3</span>
+            <span class="tag pos">承認済 3</span>
+            <span class="tag brand">本部長承認中 2</span>
+            <span class="tag warn">部長承認中 1</span>
+            <span class="tag accent">経理滞留 2</span>
           </div>
         </div>
         <table class="tbl">
           <thead>
             <tr>
-              <th>発注番号</th>
+              <th>PO番号</th>
               <th>仕入先</th>
               <th>品目</th>
               <th class="num">金額</th>
-              <th>申請者</th>
-              <th>承認進捗</th>
-              <th>状態</th>
+              <th>納期</th>
+              <th>承認状態</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td class="mono">PO-6621-042</td><td class="name">三菱電機部品(株)</td><td>RF モジュール P-8842</td><td class="num">¥8,400,000</td><td>田上 慎太郎</td><td><div class="prog-bar" style="width: 120px;"><div class="prog-fill" style="width: 66%;"></div></div></td><td><span class="status-pill info">本部長承認中</span></td></tr>
-            <tr><td class="mono">PO-6621-043</td><td class="name">村田製作所</td><td>コンデンサ 積層 一式</td><td class="num">¥3,180,000</td><td>飯田 学</td><td><div class="prog-bar" style="width: 120px;"><div class="prog-fill pos" style="width: 100%;"></div></div></td><td><span class="status-pill ok">承認済</span></td></tr>
-            <tr><td class="mono">PO-6621-044</td><td class="name">京セラ</td><td>セラミック基板</td><td class="num">¥12,800,000</td><td>飯田 学</td><td><div class="prog-bar" style="width: 120px;"><div class="prog-fill warn" style="width: 33%;"></div></div></td><td><span class="status-pill warn">部長承認中</span></td></tr>
-            <tr><td class="mono">PO-6621-045</td><td class="name">TDK</td><td>フェライトコア 2000個</td><td class="num">¥1,240,000</td><td>橋本 千秋</td><td><div class="prog-bar" style="width: 120px;"><div class="prog-fill pos" style="width: 100%;"></div></div></td><td><span class="status-pill ok">承認済</span></td></tr>
-            <tr><td class="mono">PO-6621-046</td><td class="name">東芝電子</td><td>半導体 STM32 300個</td><td class="num">¥2,460,000</td><td>田上 慎太郎</td><td><div class="prog-bar" style="width: 120px;"><div class="prog-fill crit" style="width: 33%;"></div></div></td><td><span class="status-pill crit">滞留 3日</span></td></tr>
-            <tr><td class="mono">PO-6621-047</td><td class="name">パナソニック</td><td>バッテリー Li-Ion 800個</td><td class="num">¥6,880,000</td><td>飯田 学</td><td><div class="prog-bar" style="width: 120px;"><div class="prog-fill" style="width: 66%;"></div></div></td><td><span class="status-pill info">本部長承認中</span></td></tr>
-            <tr><td class="mono">PO-6621-048</td><td class="name">日本電産</td><td>マイクロモーター</td><td class="num">¥4,200,000</td><td>橋本 千秋</td><td><div class="prog-bar" style="width: 120px;"><div class="prog-fill warn" style="width: 33%;"></div></div></td><td><span class="status-pill warn">部長承認中</span></td></tr>
+            <tr>
+              <td><span class="mono">PO-2026-0847</span></td>
+              <td class="name">三菱電機部品(株)<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">戦略仕入先</div></td>
+              <td>RF モジュール P-8842 · 200個</td>
+              <td class="num">¥8,420,000</td>
+              <td class="mono">07/14</td>
+              <td>
+                <div class="prog-bar" style="width: 140px; margin-bottom: 4px;"><div class="prog-fill" style="width: 60%;"></div></div>
+                <span class="status-pill info">STEP 3 · 本部長</span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="mono">PO-2026-0851</span></td>
+              <td class="name">村田製作所<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">戦略仕入先</div></td>
+              <td>積層コンデンサ 一式</td>
+              <td class="num">¥3,180,000</td>
+              <td class="mono">07/12</td>
+              <td>
+                <div class="prog-bar" style="width: 140px; margin-bottom: 4px;"><div class="prog-fill pos" style="width: 100%;"></div></div>
+                <span class="status-pill ok">STEP 5 · 発注確定</span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="mono">PO-2026-0854</span></td>
+              <td class="name">京セラ<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">戦略仕入先</div></td>
+              <td>セラミック基板 300枚</td>
+              <td class="num">¥12,860,000</td>
+              <td class="mono">07/18</td>
+              <td>
+                <div class="prog-bar" style="width: 140px; margin-bottom: 4px;"><div class="prog-fill warn" style="width: 40%;"></div></div>
+                <span class="status-pill warn">STEP 2 · 部長</span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="mono">PO-2026-0858</span></td>
+              <td class="name">TDK<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">継続取引</div></td>
+              <td>フェライトコア 2,000個</td>
+              <td class="num">¥1,240,000</td>
+              <td class="mono">07/16</td>
+              <td>
+                <div class="prog-bar" style="width: 140px; margin-bottom: 4px;"><div class="prog-fill pos" style="width: 100%;"></div></div>
+                <span class="status-pill ok">STEP 5 · 発注確定</span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="mono">PO-2026-0862</span></td>
+              <td class="name">大同特殊鋼(株)<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">要監視</div></td>
+              <td>特殊金属材料 · 特注</td>
+              <td class="num">¥6,480,000</td>
+              <td class="mono">07/22</td>
+              <td>
+                <div class="prog-bar" style="width: 140px; margin-bottom: 4px;"><div class="prog-fill crit" style="width: 70%;"></div></div>
+                <span class="status-pill crit">STEP 4 · 経理滞留 4日</span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="mono">PO-2026-0865</span></td>
+              <td class="name">パナソニック<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">継続取引</div></td>
+              <td>バッテリー Li-Ion 800個</td>
+              <td class="num">¥6,880,000</td>
+              <td class="mono">07/24</td>
+              <td>
+                <div class="prog-bar" style="width: 140px; margin-bottom: 4px;"><div class="prog-fill" style="width: 60%;"></div></div>
+                <span class="status-pill info">STEP 3 · 本部長</span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="mono">PO-2026-0868</span></td>
+              <td class="name">日本電産<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">継続取引</div></td>
+              <td>マイクロモーター 一式</td>
+              <td class="num">¥4,240,000</td>
+              <td class="mono">07/20</td>
+              <td>
+                <div class="prog-bar" style="width: 140px; margin-bottom: 4px;"><div class="prog-fill pos" style="width: 100%;"></div></div>
+                <span class="status-pill ok">STEP 5 · 発注確定</span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="mono">PO-2026-0871</span></td>
+              <td class="name">東芝電子<div class="mono" style="color: var(--ink-3); font-size: 10.5px; margin-top: 2px;">継続取引</div></td>
+              <td>半導体 STM32 · 300個</td>
+              <td class="num">¥2,480,000</td>
+              <td class="mono">07/26</td>
+              <td>
+                <div class="prog-bar" style="width: 140px; margin-bottom: 4px;"><div class="prog-fill crit" style="width: 70%;"></div></div>
+                <span class="status-pill crit">STEP 4 · 経理滞留 3日</span>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
